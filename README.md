@@ -73,12 +73,12 @@ cd proyecto-solicitudes-credito
 
 🔍 Página Simulador 
 
-![Captura página principal](./recursos/page2.png)
+![Captura página simulador](./recursos/page2.png)
 
 
 📝 Página Solicitar
 
-![Captura página principal](./recursos/page2.png)
+![Captura página solicitar](./recursos/page3.png)
 
 📚 Créditos y Agradecimientos
 
