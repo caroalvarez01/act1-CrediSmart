@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreditSmart – Crédito al Instante</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="recursos/logo3.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Estilos del video de fondo */
+    .video-fondo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: brightness(0.75);
+      transition: opacity 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===========================
+       HEADER
+  ============================ -->
+  <header class="site-header">
+    <div class="logo">
+      <img src="recursos/logo1.png" alt="Logo CreditSmart" />
+      <h1 class="logo-title">CreditSmart</h1>
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="simulador.html">Simula tu Crédito</a></li>
+        <li><a href="solicitar.html">Solicita tu Crédito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===========================
+       HERO - VIDEO DE FONDO
+  ============================ -->
+  <main>
+    <section class="hero hero-creditos">
+      <video id="bgVideo" autoplay muted playsinline loop preload="auto" class="video-fondo">
+        <source src="recursos/pieza1.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+
+      <div class="hero-content">
+        <p>
+          Encuentra el crédito ideal con
+          <span class="cambio-clim">CreditSmart</span>.<br />
+          Tasas competitivas, plazos flexibles y asesoría personalizada.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===========================
+         CATÁLOGO DE CRÉDITOS
+    ============================ -->
+    <section class="contenedor">
+      <h2>Catálogo de Créditos</h2>
+      <p>Selecciona un producto para conocer más detalles o solicitarlo en línea.</p>
+
+      <div class="catalogo-grid">
+        <article class="card">
+          <img src="recursos/libre-inversion.png" alt="Crédito Libre Inversión" />
+          <h3>Crédito Libre Inversión</h3>
+          <p>Tasa anual: <strong>12%</strong></p>
+          <p>Desde $1.000.000 hasta $20.000.000</p>
+          <a href="simulador.html" class="btn">Ver más</a>
+        </article>
+
+        <article class="card">
+          <img src="recursos/vivienda.png" alt="Crédito Vivienda" />
+          <h3>Crédito Vivienda</h3>
+          <p>Tasa anual: <strong>7.5%</strong></p>
+          <p>Hasta $200.000.000</p>
+          <a href="simulador.html" class="btn">Ver más</a>
+        </article>
+
+        <article class="card">
+          <img src="recursos/estudio.png" alt="Crédito Educativo" />
+          <h3>Crédito Educativo</h3>
+          <p>Tasa anual: <strong>6%</strong></p>
+          <p>Desde $500.000 hasta $10.000.000</p>
+          <a href="simulador.html" class="btn">Ver más</a>
+        </article>
+
+        <article class="card">
+          <img src="recursos/empresarial.png" alt="Crédito Empresarial" />
+          <h3>Crédito Empresarial</h3>
+          <p>Tasa anual: <strong>11%</strong></p>
+          <p>Hasta $500.000.000</p>
+          <a href="simulador.html" class="btn">Ver más</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===========================
+       FOOTER
+  ============================ -->
+  <footer class="site-footer">
+    <p>Desarrollado por: Carolina Álvarez – 2025 ✨</p>
+  </footer>
+
+  <!-- ===========================
+       SCRIPT: LOOP ESTABLE DEL VIDEO
+  ============================ -->
+  <script>
+    const video = document.getElementById("bgVideo");
+
+    video.addEventListener("timeupdate", () => {
+      if (video.duration && video.currentTime >= video.duration - 0.3) {
+        video.currentTime = 0.001;
+        video.play();
+      }
+    });
+
+    video.addEventListener("pause", () => {
+      setTimeout(() => {
+        if (video.paused) video.play();
+      }, 500);
+    });
+
+    video.addEventListener("ended", () => {
+      video.currentTime = 0.001;
+      video.play();
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible" && video.paused) {
+        video.play();
+      }
+    });
+  </script>
+</body>
+</html>

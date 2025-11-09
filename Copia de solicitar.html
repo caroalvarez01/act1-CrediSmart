@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreditSmart – Solicitar Crédito</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo CreditSmart">
+      <h1 class="logo-title">CreditSmart – Sistema de Créditos</h1>
+    </div>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="simulador.html">Simulador</a></li>
+        <li><a href="solicitar.html">Solicitar Crédito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenedor">
+      <h2>Formulario de Solicitud</h2>
+      <p>Completa la información para iniciar tu solicitud de crédito.</p>
+
+      <form class="form-solicitud">
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <label>Nombre completo
+            <input type="text" required>
+          </label>
+          <label>Cédula
+            <input type="number" required>
+          </label>
+          <label>Email
+            <input type="email" required>
+          </label>
+          <label>Teléfono
+            <input type="tel" required>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Información del Crédito</legend>
+          <label>Tipo de crédito
+            <select required>
+              <option>Libre Inversión</option>
+              <option>Vehículo</option>
+              <option>Vivienda</option>
+              <option>Educativo</option>
+              <option>Empresarial</option>
+            </select>
+          </label>
+          <label>Monto solicitado
+            <input type="number" required>
+          </label>
+          <label>Plazo en meses
+            <select>
+              <option>12</option>
+              <option>24</option>
+              <option>36</option>
+              <option>48</option>
+              <option>60</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <button class="btn">Enviar Solicitud</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Desarrollado por: Carolina Álvarez – 2025 ✨</p>
+  </footer>
+</body>
+</html>
