@@ -87,5 +87,5 @@ Proyecto desarrollado por Carolina, estudiante de Tecnología en Desarrollo de S
 Agradecimientos al profesor y los materiales del curso por su apoyo en la comprensión de HTML5, CSS3 y diseño responsive. 💻✨
 
 📅 Última actualización: Noviembre de 2025
-📌 **Repositorio**: https://github.com/tu-caroalvarez01/act1-CrediSmart
+📌 **Repositorio**: https://github.com/caroalvarez01/act1-CrediSmart 
 
