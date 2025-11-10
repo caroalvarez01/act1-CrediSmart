@@ -82,9 +82,9 @@ cd proyecto-solicitudes-credito
 
 📚 Créditos y Agradecimientos
 
-Proyecto desarrollado por Carolina, estudiante de Tecnología en Desarrollo de Software, como parte de la actividad académica de ingeniería  Web.
+Proyecto desarrollado por Carolina Álvarez, estudiante de Tecnología en Desarrollo de Software, como parte de la actividad académica de ingeniería  Web.
 
-Agradecimientos al profesor y los materiales del curso por su apoyo en la comprensión de HTML5, CSS3 y diseño responsive. 💻✨
+Agradecimientos al profesor y los materiales del curso por su apoyo en la comprensión de HTML5, CSS3 y diseño responsive. 
 
 📅 Última actualización: Noviembre de 2025
 📌 **Repositorio**: https://github.com/caroalvarez01/act1-CrediSmart 
